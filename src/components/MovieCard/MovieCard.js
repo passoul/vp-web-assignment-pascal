@@ -1,4 +1,5 @@
 import React from 'react'
+import './MovieCard.css'
 
 export const MovieCard = ({ movie, type }) => {
     return (
