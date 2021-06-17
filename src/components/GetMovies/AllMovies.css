@@ -15,7 +15,13 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 30px;
-}
+  }
+  
+  @media (min-width: 992px) {
+    .movie-grid {
+      grid-template-columns: repeat(5, 1fr);
+    }
+  }
 
 .movie-page .no-movies {
     color: #c4c4c4;

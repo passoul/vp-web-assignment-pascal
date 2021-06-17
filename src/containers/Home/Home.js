@@ -1,5 +1,5 @@
 import React from 'react';
-import { AllMovies } from '../../components/GetMovies/AllMovies'
+import { AllMovies } from '../../components/GetMovies/GetAllMovies'
 
 export const Home = () => {
     return (
