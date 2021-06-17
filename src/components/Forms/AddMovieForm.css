@@ -7,7 +7,7 @@
 .add-content .input-wrapper{
     margin-bottom: 20px;
 }
-.add-content .input-wrapper input {
+.add-content .input-wrapper input, .add-content .input-wrapper textarea {
     width: 100%;
     background-color: var(--primary);
     padding: 10px;

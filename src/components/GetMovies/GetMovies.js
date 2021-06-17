@@ -11,7 +11,9 @@ export const MoviesList = ({ type }) => {
      * All we have to do is call useSelector() once in our component, and it does the rest of the work for us.
      */
     const state = useSelector(state => state)
-    let movieList = (type === 'watchlist') ? state.watchlist : state.watched;
+    const movieList = (type === 'watchlist') ? state.watchlist : state.watched;
+    const noMoviesText = (type === 'watchlist') ? 'No movies in your list, add some!' : 'No movies in your list, time to make some popcorn!';
+
 
     useEffect(() => {
         localStorage.setItem("watchlist", JSON.stringify(state.watchlist));
@@ -28,7 +30,7 @@ export const MoviesList = ({ type }) => {
                             ))}
                         </div>
                     ) : (
-                        <h2 className="no-movies">No movies in your list, add some!</h2>
+                        <h2 className="no-movies">{ noMoviesText }</h2>
                     )}
             </div>
         </div>

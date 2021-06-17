@@ -20,8 +20,7 @@ export const addMovieToWatchlist = (movie) => {
  * @param {object} movie
  * @returns 
  */
-export const addMovieToWatched = (movie) => {
-    
+export const addMovieToWatched = (movie) => {    
     return{
         type: ADD_MOVIE_TO_WATCHED,
         payload: movie
