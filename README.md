@@ -1,3 +1,16 @@
+## Feedback
+### Installed:
+
+1. **[react-router-dom](https://www.npmjs.com/package/react-router-dom) => Routing is capability of web application to load different component/pages whenever a link is clicked (rewrite sections of a page rather than loading entire new pages from a server.)**
+2. **Font awesome css => to get some icons.**
+3. **[React-redux](https://www.npmjs.com/package/react-redux/v/5.1.1) => Redux is a predictable state container for JavaScript apps. As the application grows, it becomes difficult to keep it organized and maintain data flow. Redux solves this problem by managing application’s state with a single global object called Store.**
+
+### Refactor/fix:
+
+1. **Create [components](https://reactjs.org/docs/components-and-props.html) and components styles(Components are independent and reusable bits of code. They serve the same purpose as JavaScript functions, but work in isolation and return HTML via a render() function).**
+2. **Create router and containers and containers styles (containers will call components to build page)**
+4. **Create Redux [store](https://redux.js.org/tutorials/fundamentals/part-4-store)([State, Actions and Reducers](https://redux.js.org/tutorials/fundamentals/part-3-state-actions-reducers))**
+5. **Connect Redux store to [React](https://redux.js.org/tutorials/fundamentals/part-5-ui-react**
 
 ## JS/React app cleanup
 
