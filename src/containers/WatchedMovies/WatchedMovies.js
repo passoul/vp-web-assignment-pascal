@@ -1,11 +1,11 @@
 import React from 'react'
-import { Watched } from '../../components/GetMovies/GetWatched'
+import { MoviesList } from '../../components/GetMovies/GetMovies';
 
 export const WatchedMovies = () => {
     return (
         <div>
             <h1>Watched Movies</h1>
-            <Watched />
+            <MoviesList type="watched" />
         </div>
     )
 }

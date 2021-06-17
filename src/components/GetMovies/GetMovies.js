@@ -4,13 +4,14 @@ import { MovieCard } from '../MovieCard/MovieCard'
 import './AllMovies.css'
 
 
-export const AllMovies = () => {
+export const MoviesList = ({ type }) => {
     /**
      * useSelector automatically subscribes to the Redux store for us! That way, any time an action is dispatched, it will call its selector function again right away. 
      * If the value returned by the selector changes from the last time it ran, useSelector will force our component to re-render with the new data. 
      * All we have to do is call useSelector() once in our component, and it does the rest of the work for us.
      */
     const state = useSelector(state => state)
+    let movieList = (type === 'watchlist') ? state.watchlist : state.watched;
 
     useEffect(() => {
         localStorage.setItem("watchlist", JSON.stringify(state.watchlist));
@@ -20,10 +21,10 @@ export const AllMovies = () => {
     return (
         <div className="movie-page">
             <div className="container">
-                    {state.watchlist.length > 0 ? (
+                    {movieList.length > 0 ? (
                         <div className="movie-grid">
-                            {state.watchlist.map((movie) => ( 
-                                <MovieCard key={movie.title} movie={movie} type="watchlist"/> 
+                            {movieList.map((movie) => ( 
+                                <MovieCard key={movie.title} movie={movie} type={type} /> 
                             ))}
                         </div>
                     ) : (

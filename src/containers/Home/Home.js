@@ -1,11 +1,11 @@
 import React from 'react';
-import { AllMovies } from '../../components/GetMovies/GetAllMovies'
+import { MoviesList } from '../../components/GetMovies/GetMovies';
 
 export const Home = () => {
     return (
-        <div>
+        <div className="container">
             <h1>All Movies</h1>
-            <AllMovies/>
+            <MoviesList type="watchlist" />
         </div>
     )
 }
